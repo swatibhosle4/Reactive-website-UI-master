@@ -1,0 +1,90 @@
+<html>
+    <head>
+        <script src="../js/jquery-3.4.1.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+        <script src="../js/jquery.creditCardValidator.js"></script>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+        
+    <script src="../js/b2binfo.js"></script>
+
+    </head>
+    <body style="padding-left: 25px; background-color: azure;" onload="changeImage()">
+        <br/>
+        <div class="d-flex justify-content-center align-items-center" >
+            <h6 id = "packagedetatils" style="padding-right: 25px">Your selection :</h6>
+            <img id="productimg" style="height: 200px; width: 200px;">
+        </div>
+        <br/>
+        <h5 style="color: midnightblue" id="billingHeader"> Please Input your Billing Details</h5>
+        <br/>
+        <div class="row" id=billingDiv>
+            <div class="col-xs-7 col-sm-6 col-lg-4">
+                <div>
+                    <h6 >First Name </h6> <input type="text" style="width: 300px" id="fname"> 
+                </div>
+                <div>
+                    <h6 >Last Name </h6> <input  type="text" style="width: 300px" id="lname"> 
+                </div>
+                <div>
+                    <h6 >Address Line 1 </h6> <input  type="text" style="width: 300px" id="add1"> 
+                </div>
+                <div>
+                    <h6 >Address Line 2 </h6> <input  type="text" style="width: 300px" id="add2"> 
+                </div>
+                <div>
+                    <h6 >Address Line 3 </h6> <input  type="text" style="width: 300px" id="add3"> 
+                </div>
+                <div>
+                    <h6 >Zip Code </h6> <input  type="text" style="width: 300px" id="zipcode"> 
+                </div>
+                <div>
+                    <h6 >Phone Number </h6> <input id="phonenumber"  type="tel" style="width: 300px"> 
+                </div>
+            </div>
+        </div>
+                      <br/>
+
+        <button style="background-color: blue; color: white; width: 250px" id="billingButton"> Submit </button>
+<!-- ------------------------------------------------------------------------------------- -->
+        
+                <br/>
+        <h5 style="color: midnightblue; display: none" id="billingveriy"> Please Review your Information</h5>
+        <br/>
+        <div class="row" id=billingverifyDiv style="display: none">
+            <div class="col-xs-7 col-sm-6 col-lg-4">
+                <div>
+                    <h6 type="text" style="width: 300px" id="fnamevfy"> </h6>
+                </div>
+                <div>
+                    <h6  type="text" style="width: 300px" id="lnamevfy"> </h6>
+                </div>
+                <div>
+                    <h6  type="text" style="width: 300px" id="add1vfy"> </h6>
+                </div>
+                <div>
+                    <h6  type="text" style="width: 300px" id="add2vfy"> </h6>
+                </div>
+                <div>
+                   <h6  type="text" style="width: 300px" id="add3vfy"> </h6>
+                </div>
+                <div>
+                    <h6  type="text" style="width: 300px" id="zipcodevfy"> </h6>
+                </div>
+                <div>
+                    <h6 id="phonenumbevfyr"  type="tel" style="width: 300px"></h6> 
+                </div>
+            </div>
+            <div class="col-xs-6 col-sm-4 col-lg-3">
+               <p style="border: 1px solid; padding: 10px">
+                Thank You, for the interest in our service. Please verify and submit the details. Our sales representative will get in touch with you in next 48 hours, to formalize the details, once you submit your details with us..
+                </p>
+
+        </div>
+        </div>
+                      <br/>
+
+        <button style="background-color: blue; color: white; width: 250px;display: none" id="billingVerifyButton"> Submit </button>
+        
+    </body>
+</html>
